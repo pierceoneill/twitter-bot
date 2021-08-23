@@ -12,7 +12,7 @@ auth = tweepy.OAuthHandler(API_KEY, API_SECRET)
 auth.set_access_token(ACCESS_TOKEN, ACCESS_SECRET)
 api = tweepy.API(auth)
 
-tweet_list = api.favorites(screen_name='pierceoneill', count=5)
+tweet_list = api.home_timeline(screen_name='CyberNews', count=10)
 # print(tweet_list)
 
 # print the id for each of the tweets
